@@ -80,8 +80,8 @@ function questao_03() {
         
 }
 
-// Questão 03 --------------------------------------------------------------------------------------
 
+// Questão 04 --------------------------------------------------------------------------------------
 
 function questao_04() {
     let elementosResposta = document.getElementsByClassName("resposta04");
@@ -97,4 +97,73 @@ function questao_04() {
         }
     });
         
+}
+
+
+// Questão 05 --------------------------------------------------------------------------------------
+
+
+
+function vizualizar() {
+    let elementosResposta = document.getElementsByClassName("resposta05");
+    let arrayElementos = Array.from(elementosResposta);
+
+    arrayElementos.forEach(elemento => {
+        if (elemento.style.display === "none" || elemento.style.display === "") {
+            elemento.style.display = "flex";
+            elemento.style.background = "yellow";
+        }else {
+            elemento.style.display = "none";
+            elemento.style.background = "none";
+        }
+    });
+        
+}
+
+function questao_05() {
+
+    let entrada = document.getElementById("EntradaString").value;
+    let resultado = document.getElementById("resultadoString");
+
+    let valorInvertido = '';
+
+    for (let i = entrada.length - 1; i >= 0; i--) {
+        valorInvertido += entrada[i];
+    }
+
+    resultado.innerHTML = "String Invertida: " + valorInvertido;
+
+}
+
+
+//------------------------------------------------------------------------------------------------------
+
+function cod01() {
+    let elemento = document.getElementById("cod01");
+    if (elemento.style.display === "none" || elemento.style.display === "") {
+        elemento.style.display = "flex";
+    }else {
+        elemento.style.display = "none";
+        elemento.style.background = "none";
+    }
+}
+
+function cod02() {
+    let elemento = document.getElementById("cod02");
+    if (elemento.style.display === "none" || elemento.style.display === "") {
+        elemento.style.display = "flex";
+    }else {
+        elemento.style.display = "none";
+        elemento.style.background = "none";
+    }
+}
+
+function cod05() {
+    let elemento = document.getElementById("cod05");
+    if (elemento.style.display === "none" || elemento.style.display === "") {
+        elemento.style.display = "flex";
+    }else {
+        elemento.style.display = "none";
+        elemento.style.background = "none";
+    }
 }
